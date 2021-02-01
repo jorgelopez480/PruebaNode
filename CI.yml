@@ -25,4 +25,3 @@ jobs:
     inputs:
       targetType: inline
       script: 'bc-commands compile-project'
-      'bc-commands publish-bc-library'
