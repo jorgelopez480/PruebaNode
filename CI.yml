@@ -21,7 +21,12 @@ jobs:
       targetType: inline
       script: 'Write-Host "##vso[build.updatebuildnumber]$(appVersion).$(appBuild).$(appRevision)"'
   - task: PowerShell@2
-    displayName: 'Push artifacts'
+    displayName: 'Compile artifacts'
     inputs:
       targetType: inline
       script: 'bc-commands compile-project'
+    - task: PowerShell@2
+    displayName: 'Push artifacts'
+    inputs:
+      targetType: inline
+      script: 'bc-commands publish-bc-library'
