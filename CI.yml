@@ -30,4 +30,4 @@ jobs:
     displayName: 'Push artifacts'
     inputs:
       targetType: inline
-      script: 'bc-commands publish-bc-library'
+      script: 'bc-commands publish-library-to-npm'
