@@ -25,7 +25,7 @@ jobs:
     inputs:
       targetType: inline
       script: 'bc-commands compile-project'
-      workingDirectory: 'C:\Users\34671\AppData\Roaming\npm'
+      
   - task: PowerShell@2
     displayName: 'Push artifacts'
     inputs:
