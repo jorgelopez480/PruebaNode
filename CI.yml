@@ -24,7 +24,7 @@ jobs:
     displayName: 'Compile artifacts'
     inputs:
       targetType: inline
-      script: 'Compile-AppInBcContainer -containerName test -UpdateSymbols -CopyAppToSymbolsFolder'
+      script: 'Compile-AppInBcContainer -containerName test -UpdateSymbols -CopyAppToSymbolsFolder -appProjectFolder'
       
   - task: PowerShell@2
     displayName: 'Push artifacts'
